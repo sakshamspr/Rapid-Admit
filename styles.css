@@ -1,0 +1,141 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0; /* Removed padding to ensure full width header */
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to top right, #012b54, #559eed);
+    padding: 10px 15px; /* Reduced padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+    position: fixed; /* Keep header fixed at the top */
+    top: 0;
+    left: 0;
+}
+
+/* Header Content */
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-container img {
+    height: 40px; /* Further reduced logo size */
+    width: auto;
+    margin-right: 10px; /* Reduced margin */
+}
+
+header .company-name {
+    font-size: 1.3em; /* Further reduced font size */
+    color: #fff; /* Text color set to white */
+    font-weight: bold;
+}
+
+/* Navigation Styling */
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 15px; /* Reduced margin between items */
+}
+
+header nav ul li a {
+    color: #fff; /* Text color set to white */
+    text-decoration: none;
+    font-size: 1em; /* Further reduced font size */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Find Hospitals Section Styling */
+.find-hospitals {
+    padding: 30px; /* Increased padding for more negative space */
+    flex-grow: 1;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 30px auto; /* Centered section with more margin for negative space */
+    max-width: 900px; /* Restricts width to ensure good spacing */
+}
+
+.find-hospitals h2 {
+    font-size: 2em;
+    color: #012b54;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.find-hospitals p {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+#map {
+    height: 400px; /* Reduced height for a smaller map */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: height 0.3s ease; /* Smooth transition effect for map resizing */
+}
+
+#hospital-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+#hospital-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+#hospital-list li:last-child {
+    border-bottom: none;
+}
+
+#hospital-list li:hover {
+    background-color: #f9f9f9; /* Subtle hover effect for list items */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background: linear-gradient(to top right, #012b54, #559eed);
+    padding: 15px 0;
+    color: #fff;
+    font-size: 0.9em;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 40px; /* Added margin to separate footer from content */
+}
+
